@@ -9,6 +9,8 @@ from models import db, Movie
 
 fake = Faker()
 
+print("Seeding 🌱🌱🌱")
+
 def make_movies():
 
     Movie.query.delete()
@@ -24,3 +26,5 @@ def make_movies():
 if __name__ == '__main__':
     with app.app_context():
         make_movies()
+
+print("Done seeding 🪴🪴🪴")
