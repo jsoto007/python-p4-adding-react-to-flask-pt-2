@@ -10,7 +10,7 @@ function App() {
       .then((movies) => setFilms(movies));
 
   }, []);
-console.log(films)
+
 return (
   <div>
     {films.map((movie) => {
